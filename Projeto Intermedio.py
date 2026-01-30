@@ -7,7 +7,7 @@ stock_vynis3=5
 escolha= print("Olá, bem vindo há loja!")
 while escolha!=4:
     time.sleep(1.2)
-    escolha = int(input("Qual categoria de Vinis deseja acessar?\n1-(os best-sellers)\n2-(Nacionais)\n3-(Os favoritos da casa\n4-Nenhum"))
+    escolha = int(input("Qual categoria de Vinis deseja acessar?\n1-(os best-sellers)\n2-(Nacionais)\n3-(Os favoritos da casa\n4-Nenhum\n5.Trocar"))
     if escolha==1:
         escolha2=int(input("Temos Bad Bunny(1),Drake(2).Qual deseja?"))
         time.sleep(0.8)
@@ -41,6 +41,12 @@ while escolha!=4:
             if yes_no==1:
                 stock_vynis1, stock_vynis2, stock_vynis3 = Thing2.restock(stock_vynis1, stock_vynis2, stock_vynis3)
             if yes_no==2:
-                break
-    if escolha==4:
-        print(f"O seu total deu={saldo} obrigado pela sua visita ")
+                   break
+    if escolha==5:
+        maybe=print("Qual o valor do Vinil que queres?\n25€(1)\n30€(2)\n45€(3)")
+        
+
+
+
+if escolha==4:
+    print(f"O seu total deu={saldo} obrigado pela sua visita ")
