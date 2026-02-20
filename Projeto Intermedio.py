@@ -78,4 +78,7 @@ while escolha!=6:
         if yes_no==1:
             stock_vynis1, stock_vynis2, stock_vynis3 = Thing2.restock(stock_vynis1, stock_vynis2, stock_vynis3)
 if escolha==6:
-    print(f"O seu total deu:{saldo}€\nObrigado pela sua visita ")
+    if saldo<=0:
+        print(f"Ficamos-lhe a dever {abs(saldo)}€")
+    else:
+        print(f"O seu total deu:{abs(saldo)}€\nObrigado pela sua visita.")
